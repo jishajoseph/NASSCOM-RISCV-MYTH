@@ -1,0 +1,24 @@
+# Compiled files
+*.o
+*.elf
+*.out
+*.exe
+a.out
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Sensitive information
+.env
+*.pem
+*.key
