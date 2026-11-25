@@ -108,7 +108,7 @@ gets translated into:
 
 This demonstrates how high-level constructs become low-level processor operations.
 
-![Loop Assembly Translation](images/lec4/Loop_Assembly_Translation.png)
+
 
 ---
 
