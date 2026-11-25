@@ -42,7 +42,7 @@ I will be updating this repository throughout the workshop with lecture notes, l
 
 |---|---|---|
 
-| Day 1 | Introduction to RISC-V ISA and GNU compiler toolchain | In Progress |
+| Day 1 -Introduction to RISC-V ISA and GNU compiler toolchain | In Progress |
 
 | Day 2 | Application Binary Interface and basic verification flow | Pending |
 
