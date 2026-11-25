@@ -34,7 +34,7 @@ Sum = 1 + 2 + 3 + 4 + 5
 
 # C Program
 
-![C Program](images/lec3/C_program.png)
+![C Program](images/lec3/cprgmsum1ton.png)
 
 ---
 
