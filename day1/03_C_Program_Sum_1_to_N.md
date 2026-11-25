@@ -85,7 +85,7 @@ Example execution:
 | 4 | 4 | 10 |
 | 5 | 5 | 15 |
 
-![Terminal Execution](day1/images/lec1/sum1tonout.png)
+![Terminal Execution](images/lec1/sum1tonout.png)
 
 ---
 
