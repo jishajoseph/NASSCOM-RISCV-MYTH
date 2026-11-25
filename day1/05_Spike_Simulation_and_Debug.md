@@ -156,8 +156,24 @@ It bridges the gap between assembly instructions and processor execution behavio
 
 Each instruction executed in Spike corresponds to actual processor operations. This helps learners visualize how software executes on hardware.
 
----
+---### Stack Pointer Analysis Using Spike
 
+The stack pointer (SP) is represented by register x2 in the RISC-V architecture. It holds the address of the current top of the stack.
+
+During debugging using the Spike simulator, the initial stack pointer value was observed as `0x0000003ffffffb30`.
+
+After executing the instruction:
+
+```assembly
+addi sp, sp, -96
+```
+
+the stack pointer changed to `0x0000003ffffffad0`.
+
+The difference between these addresses is `0x60`, which corresponds to 96 bytes in decimal. This indicates that the function allocated 96 bytes of stack memory.
+
+Since the RISC-V stack grows towards lower memory addresses, stack allocation is performed by decrementing the stack pointer. The allocated memory can be used to store local variables, saved registers and temporary data during function execution. This experiment demonstrates stack pointer manipulation and stack frame allocation at the instruction-set level.
+![register value changing while stackpointer addi -96](images/lec4/spchangingreg_value.png)
 # Key Learning Outcome
 
 After this lecture, the learner understands:
