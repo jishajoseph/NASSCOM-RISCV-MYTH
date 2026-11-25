@@ -58,7 +58,7 @@ I will be updating this repository throughout the workshop with lecture notes, l
 
 
 
-## Day 1 â€“ Introduction to RISC-V ISA and GNU Compiler Toolchain
+## Day 1 “ Introduction to RISC-V ISA and GNU Compiler Toolchain
 
 
 
@@ -66,7 +66,7 @@ Documentation in progress.
 
 
 
-## Day 2 â€“ Application Binary Interface and Basic Verification Flow
+## Day 2 “ Application Binary Interface and Basic Verification Flow
 
 
 
@@ -74,7 +74,7 @@ To be updated.
 
 
 
-## Day 3 â€“ Digital Logic with TL-Verilog and MakerChip
+## Day 3 “ Digital Logic with TL-Verilog and MakerChip
 
 
 
@@ -82,7 +82,7 @@ To be updated.
 
 
 
-## Day 4 â€“ Basic RISC-V CPU Microarchitecture
+## Day 4 “ Basic RISC-V CPU Microarchitecture
 
 
 
@@ -90,7 +90,7 @@ To be updated.
 
 
 
-## Day 5 â€“ Pipelined RISC-V CPU Microarchitecture
+## Day 5 “ Pipelined RISC-V CPU Microarchitecture
 
 
 
