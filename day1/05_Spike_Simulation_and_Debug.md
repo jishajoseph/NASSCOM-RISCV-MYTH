@@ -56,7 +56,7 @@ Instruction Execution
 
 Command:
 
-![Spike Program Execution](images/lec3/Spike_Program_Execution.png)
+![Spike Program Execution](day1/images/lec5/Spike_Program_Execution.png)
 
 Where:
 
