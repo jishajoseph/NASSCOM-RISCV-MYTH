@@ -173,7 +173,7 @@ the stack pointer changed to `0x0000003ffffffad0`.
 The difference between these addresses is `0x60`, which corresponds to 96 bytes in decimal. This indicates that the function allocated 96 bytes of stack memory.
 
 Since the RISC-V stack grows towards lower memory addresses, stack allocation is performed by decrementing the stack pointer. The allocated memory can be used to store local variables, saved registers and temporary data during function execution. This experiment demonstrates stack pointer manipulation and stack frame allocation at the instruction-set level.
-![Spike Simulation](day1/images/lec3/spchangingreg_value.png)
+![Spike Simulation](images/lec3/spchangingreg_value.png)
 
 # Key Learning Outcome
 
