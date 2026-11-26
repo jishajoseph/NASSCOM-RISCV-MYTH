@@ -1,32 +1,176 @@
-﻿# Signed and Unsigned Lab
-
-> Status: Pending - documentation will be updated after completing the lecture.
+# 8-RV_D1SK3_L3_Lab_For_Signed_And_Unsigned_Numbers
 
 ## Overview
 
-To be updated.
+This lecture demonstrates practical laboratory exercises involving:
+- signed numbers
+- unsigned numbers
+- binary arithmetic
+- overflow conditions
+- 2’s complement operations
 
-## Key Concepts
+The session helps learners understand how numerical representations behave inside digital hardware systems and processors.
 
-To be updated.
+The lecture builds upon previous concepts involving:
+- binary representation
+- unsigned number systems
+- signed number systems
+- 2’s complement arithmetic
 
-## Technical Explanation
+---
 
-To be updated.
+# Objectives
 
-## Laboratory Exercises
+The main objectives of this lab are:
 
-To be updated, if applicable.
+- understand practical binary arithmetic
+- observe signed and unsigned behavior
+- analyze overflow conditions
+- understand 2’s complement calculations
 
-## Source Code
+---
 
-To be updated, if applicable.
+# Unsigned Number Arithmetic
 
-## Screenshots and Simulation Results
+Unsigned arithmetic operates only on:
+- positive values
+- zero
 
-To be updated, if applicable.
+---
 
-## Learning Outcomes
+# Signed Number Arithmetic
 
-To be updated.
+Signed arithmetic, using 2’s complement representation, allows:
 
+- positive values
+- negative values
+
+---
+
+# 2’s Complement Verification
+
+The lecture demonstrates:
+
+- how negative numbers are represented
+- how arithmetic operations work internally
+- why 2’s complement simplifies hardware design
+
+---
+
+# Overflow in Unsigned Numbers
+
+Overflow occurs when arithmetic result exceeds representable range.
+
+![Unsigned Overflow Code](images/lec8/Unsigned_Overflow_Code.png)
+
+![Unsigned Overflow Outptut](images/lec8/Unsigned_Overflow_Output.png)
+
+---
+
+# Overflow in Signed Numbers
+
+Signed overflow occurs when result exceeds signed representable range.
+
+---
+
+# Issue Observation — Incorrect Range for `long long int`
+
+During the lab, a C program was written to calculate the highest and lowest values representable using `long long int`.
+
+![Signed Overflow Code](images/lec8/Signed_Overflow_Code.png)
+
+![Signed Overflow Outptut](images/lec8/Signed_Overflow_Output.png)
+
+## Expected Output
+
+For a 64-bit signed long long int, the correct range should be:
+
+- Maximum =  9223372036854775807
+- Minimum = -9223372036854775808
+
+## Why the Error Occurs
+
+The issue is caused by:
+```text
+(int)(pow(2,63)-1)
+```
+and
+```text
+(int)(pow(2,63)*-1)
+```
+The values are explicitly typecast to:
+```text
+int
+```
+instead of:
+```text
+long long int
+```
+## Problem with int
+
+On most systems:
+```text
+int = 32 bits
+```
+Range:
+```text
+-2147483648 to 2147483647
+```
+Therefore the 64-bit value gets truncated, overflow occurs, and incorrect output is produced.
+
+## Corrected Version
+
+
+
+
+
+---
+
+# Importance of Signed vs Unsigned Arithmetic
+
+Processors treat signed and unsigned values differently.
+
+Examples:
+
+- comparison instructions
+- branch operations
+- arithmetic instructions
+- overflow detection
+
+RISC-V also contains:
+
+- signed operations
+- unsigned operations
+
+---
+
+# Lab Observations
+
+The lecture demonstrates:
+
+- binary arithmetic behavior
+- practical overflow examples
+- signed/unsigned differences
+
+---
+
+# Key Learning Outcome
+
+After this lecture, the learner understands:
+
+- signed arithmetic
+- unsigned arithmetic
+- overflow behavior
+- 2’s complement calculations
+
+---
+
+# Notes
+
+This lecture is important because processor hardware fundamentally relies on:
+
+- binary arithmetic
+- signed/unsigned interpretation
+- overflow handling
+
+for nearly all computation operations.
