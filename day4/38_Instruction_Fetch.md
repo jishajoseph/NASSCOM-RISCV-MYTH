@@ -115,15 +115,6 @@ The instruction obtained from memory will be used by the instruction decoder in 
 
 ![Instruction Fetch Implementation](images/lec38/Instruction_Fetch_Implementation.png)
 
-## Simulation Waveform
-
-![Instruction Fetch Waveform](images/lec38/Instruction_Fetch_Waveform.png)
-
-## Fetch Datapath
-
-![Instruction Fetch Datapath](images/lec38/Instruction_Fetch_Datapath.png)
-
----
 
 ## Expected Verification Results
 
