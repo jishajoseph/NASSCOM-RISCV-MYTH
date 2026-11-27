@@ -131,11 +131,7 @@ As always in sequential logic, we need a reset value. The reset acts like a calc
 
 ![Sequential Calculator TL-Verilog Code](images/lec22/Sequential_Calculator_TL-Verilog_Code.png)
 
-![Sequential Calculator Simulation Waveform](images/lec22/Sequential_Calculator_Simulation_Waveform.png)
 
-[Click Here To Open the Sequential Calculator in Makerchip](https://makerchip.com/v132/ide/~0gJflhzE/p-0mwh50)
-
----
 
 # Hardware Perspective
 
