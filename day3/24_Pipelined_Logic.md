@@ -34,8 +34,8 @@ We're able to run our clock faster and therefore we're able to present more data
 The instructor compares non-pipelined logic
 with pipelined logic. Shorter stage delays allow faster clocks.
 
-![Pipelined vs Non-pipelined](images/lec24/Pipelined_vs_Non-pipelined.png)
-
+![Pipelined vs Non-pipelined](images/lec24/Pipelined_vs_Non-pipelined1.png)
+(images/lec24/Pipelined_vs_Non-pipelined2.png)
 ---
 
 # MakerChip Demonstration
