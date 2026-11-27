@@ -114,9 +114,6 @@ The first non-reset transaction receives address zero, ensuring that the initial
 
 ![Next PC Implementation](images/lec37/Next_PC_Implementation.png)
 
-## Simulation Waveform
-
-![Next PC Waveform](images/lec37/Next_PC_Waveform.png)
 
 ### Expected Waveform Values
 
