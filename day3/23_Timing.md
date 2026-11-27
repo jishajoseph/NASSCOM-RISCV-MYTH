@@ -78,7 +78,7 @@ Reducing code reduces bugs. Advantages:
 - faster design process
 - easier maintenance
 
-![SV vs TL-Verilog](images/lec23/SV_vs_TL-Verilog.png)
+
 
 ---
 
@@ -92,7 +92,7 @@ Meaning:
 
 without changing circuit behavior. Logic can be redistributed across more stages without changing actual computation. Additional stages may be added to model long-distance signal propagation.
 
-![Retiming](images/lec23/Retiming.png)
+
 
 ---
 
