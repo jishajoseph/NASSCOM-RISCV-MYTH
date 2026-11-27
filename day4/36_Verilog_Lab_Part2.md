@@ -1,32 +1,68 @@
-﻿# Verilog Lab Part2
-
-> Status: Pending - documentation will be updated after completing the lecture.
+# 36-V_Labs_Part-2
 
 ## Overview
 
-To be updated.
+This lecture focuses on:
 
-## Key Concepts
+- visualization tools
+- CPU debugging
+- waveform analysis
+- pipeline behavior
+- branch handling
+- protected solution infrastructure
+- visualization-driven learning
 
-To be updated.
+The lecture demonstrates the completed RISC-V CPU visualization and explains how learners should:
 
-## Technical Explanation
+- debug
+- compare
+- analyze
+- validate
 
-To be updated.
+their CPU implementations.
 
-## Laboratory Exercises
+---
 
-To be updated, if applicable.
+# Pipeline Branch Behavior
 
-## Source Code
+The PC continues after the branch because pipeline has not yet resolved branch. Then The machine realizes that it went too far. This demonstrates speculative/wrong-path execution.
 
-To be updated, if applicable.
+## Branch Recovery
 
-## Screenshots and Simulation Results
+The CPU then redirects PC to proper branch target.
 
-To be updated, if applicable.
+# Hardware Perspective 
 
-## Learning Outcomes
+Pipelined CPUs often execute wrong-path instructions temporarily. This is fundamental to:
 
-To be updated.
+- branch prediction
+- speculative execution
+- pipeline recovery
+- CPU control flow handling
 
+---
+
+# Key Learning Outcome
+
+After this lecture, the learner understands:
+
+- CPU visualization usage
+- pipeline debugging
+- branch recovery behavior
+- wrong-path execution
+- register tracking
+- structural CPU debugging
+
+---
+
+# Notes
+
+This lecture introduces CPU debugging techniques.
+
+The learner learns to debug using:
+
+- visualization
+- waveforms
+- pipeline analysis
+- branch tracking
+- architectural state inspection.
