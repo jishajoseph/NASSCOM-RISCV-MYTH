@@ -56,7 +56,7 @@ The lecture divides computation into stages:
 | Stage 3 | Square root    |
 Each stage is separated by flip-flops.
 
-![Pythagoras Hardware Pipeline](images/lec23/Pythagoras_Hardware_Pipeline.png)
+![Pythagoras Hardware Pipeline](images/lec23/timingstages.png)
 
 ## Flip-Flop Between Stages
 
