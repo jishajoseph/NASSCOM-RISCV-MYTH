@@ -207,7 +207,7 @@ endmodule
 
 ## 12. Architecture Diagram
 
-![Single-Cycle RISC-V Architecture](images/lec34/Single_Cycle_CPU_Datapath.png)
+![Single-Cycle RISC-V Architecture](images/lec34/RISC-V_CPU.png)
 
 ## 13. Learning Outcomes
 
