@@ -1,102 +1,116 @@
-# 17-RV_D3SK1_L0_Welcome
+# 18-RV_D3SK1_L1_Introduction To Logic Gates
 
 ## Overview
 
-This lecture marks the beginning of:
-- Day 3
-- Digital Logic Design
-- TL-Verilog
-- Makerchip platform
-- RISC-V CPU implementation
+This lecture introduces the foundations of:
+- digital logic
+- logic gates
+- combinational circuits
+- Boolean operations
+- full adders
+- Verilog logic syntax
 
-The lecture introduces:
+The lecture explains:
 
-modern silicon design methodology
-TL-Verilog
-Makerchip IDE
-digital logic concepts
-pipelining concepts
-future workshop roadmap
-
-The instructor repeatedly emphasizes:
-
-accessibility of silicon design
-productivity improvements
-practical hands-on learning
-building a RISC-V CPU from scratch
+- how logic gates operate
+- how complex circuits are built
+- how adders are constructed
+- how digital systems scale
 
 ---
 
-# Motivation
+# Logic Gates
 
-The lecture emphasizes that silicon design can become:
+The lecture introduces that logic gates are the fundamental building blocks of digital circuits. All digital circuits are ultimately constructed using logic gates.
 
-- easier
-- more productive
-- more accessible
-- more fun
+## NOT Gate
 
-with:
+Its purpose is to invert a bit.
 
-- better tools
-- better methodologies
+## AND Gate
+
+Output becomes 1 only when both inputs are 1.
+
+## OR Gate
+
+Output becomes 1 if at least one input is 1.
+
+## XOR Gate
+
+Output becomes 1 only when exactly one input is 1.
+
+## NAND, NOR, XNOR
+
+- NAND = inverted AND
+- NOR = inverted OR
+- XNOR = inverted XOR
+
+## Universal Gates
+
+With only a NAND gate or with only a NOR you can construct all other gates.
+
+![Logic Gates](images/lec18/Logic_Gates.png)
 
 ---
 
-# L-Verilog Introduction
+# Combinational Logic
 
-The lecture introduces Transaction Level Verilog (TL-Verilog). The instructor explains that TL-Verilog is a language extension to Verilog, and, in many ways, TL-Verilog simplifies Verilog.
-
----
-
-# Makerchip IDE
-
-The lecture introduces Makerchip Online IDE Platform. Makerchip will be used for:
-
-- writing TL-Verilog
-- running simulations
-- viewing waveforms
-- debugging logic
+The lecture introduces Combinational Circuits, where outputs depend only on current inputs. The instructor explains that complex functions are created using multiple interconnected gates.
 
 ---
 
-# Digital Logic Topics
+# Full Adder Circuit
 
-The lecture explains Day 3 progression:
+The lecture introduces Full Adder.
+
+Inputs:
+
+- A
+- B
+- C
+
+Each input is single-bit. The full adder adds three bits together. Possible output range:
 ```text
-Logic Gates
-      ↓
-Combinational Logic
-      ↓
-Sequential Logic
-      ↓
-Clocked Designs
-      ↓
-Pipelining
+0 to 3
 ```
+Therefore 2 output bits are required.
+
+Outputs:
+
+- S
+- Cout
+
+The lecture explains that S is lower bit and Cout is upper bit.
+
+## Building Larger Adders
+
+The lecture then chains multiple full adders to create larger adder circuits. The instructor says that we can chain these indefinitely to allow arbitrary-width adders.
+
+![Full Adder](images/lec18/Full_Adder.png)
 
 ---
 
-# Workshop Resources
+# Verilog Syntax
 
-The lecture introduces:
+The instructor explains that the syntax differs for:
 
-- GitHub repository
-- workshop resources
-- Makerchip servers
+- single-bit operations
+- multi-bit operations
+
+![Boolean Operators](images/lec18/Boolean_Operators.png)
 
 ---
 
 # Hardware Perspective
 
-This lecture officially begins the transition from ISA/software understanding to actual hardware design. Students now begin:
+This lecture introduces the hardware foundation of computation. The circuits demonstrated directly correspond to:
 
-- digital logic design
-- hardware description coding
-- CPU construction
-- pipelined architecture implementation
+- silicon hardware
+- processor datapaths
+- ALUs
+- arithmetic units
 
-using TL-Verilog and Makerchip.
+All modern CPUs fundamentally operate using interconnected logic gates constructed from transistor-based digital logic.
 
 ---
 
@@ -104,14 +118,16 @@ using TL-Verilog and Makerchip.
 
 After this lecture, the learner understands:
 
-- overall roadmap of the remaining workshop
-- introduction to TL-Verilog
-- Makerchip platform usage
-- digital logic progression in the workshop
-- importance of modern hardware design methodologies
+- fundamental logic gates
+- truth tables
+- combinational logic
+- full adder circuits
+- multi-bit addition
+- Verilog Boolean syntax
+- scalable digital arithmetic
 
 ---
 
 # Notes
 
-This lecture transitions the learner from software and ISA concepts to processor hardware design and implementation.
+This lecture introduces the basic logic structures from which all modern processors are ultimately built.
