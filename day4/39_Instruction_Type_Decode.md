@@ -132,17 +132,7 @@ Both instructions belong to the U-type format.
 
 ---
 
-## Makerchip Implementation
 
-![Instruction Decoder Implementation](images/lec39/Instruction_Decoder_Implementation.png)
-
-## Simulation Waveform
-
-![Instruction Decoder Waveform](images/lec39/Instruction_Decoder_Waveform.png)
-
-## Generated Hardware Diagram
-
-![Instruction Decoder Datapath](images/lec39/Instruction_Decoder_Datapath.png)
 
 ---
 
