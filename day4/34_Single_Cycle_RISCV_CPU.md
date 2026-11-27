@@ -206,6 +206,7 @@ endmodule
 | 5 | 00000014 |
 
 ## 12. Architecture Diagram
+![pc](images/lec34/RISC-V_CPUpc.png)
 
 ![Single-Cycle RISC-V Architecture](images/lec34/RISC-V_CPU.png)
 
