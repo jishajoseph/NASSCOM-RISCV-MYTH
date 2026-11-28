@@ -15,7 +15,7 @@ The clock period is limited by the longest combinational path.
 
 Pipelining divides the datapath into smaller stages separated by pipeline registers. This reduces the combinational delay per stage and potentially increases the operating clock frequency.
 
-![CPU Pipeline Architecture](images/lec53/CPU Pipeline Architecture Infographic.png)
+![CPU Pipeline Architecture](images/lec53/CPU%20Pipeline%20Architecture%20Infographic.png)
 
 ## 2. Motivation for Pipelining
 
@@ -50,7 +50,7 @@ Where:
 
 During cycle 3, three instructions are processed simultaneously in different stages.
 
-![Waterfall Pipeline](images/Waterfall_Pipeline.png)
+![Waterfall Pipeline](images/lec53/Waterfall%20Pipeline.png)
 
 ## 4. Performance Improvement
 
@@ -98,7 +98,7 @@ In a pipelined processor, the next sequential instruction may already have been 
 
 This creates a possibility of executing instructions from an incorrect path.
 
-![Control Flow Hazard](images/Control_Flow_Hazard.png)
+![Control Flow Hazard](images/lec53/Control%20Flow%20Hazard.png)
 
 Possible solutions include:
 
@@ -136,8 +136,7 @@ Incorrect comparison using the old value:
     9 < 10 = True
 
 Reading the old register value can therefore result in an incorrect branch decision.
-
-![Read After Write Hazard](images/Read_After_Write_Hazard.png)
+![Read After Write Hazard](images/lec53/Read%20After%20Write%20Hazard.png)
 
 ## 8. Hazard Resolution Techniques
 
