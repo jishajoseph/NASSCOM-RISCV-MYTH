@@ -42,6 +42,64 @@ The two shadow slots reserve time for memory return and prevent a competing ordi
 
 The demonstration models a fixed memory word at byte address 104 and two registers, x5 and x6. It checks that the delayed load writes 42 into x5, a later normal operation writes 7 into x6, and no writeback collision occurs.
 
+
+### Conceptual datapath
+
+```mermaid
+flowchart TD
+    A[Source register value] --> ALU[ALU address addition]
+    B[Sign-extended immediate] --> ALU
+    ALU --> MEM[Memory response]
+    MEM --> D[Two-cycle data alignment]
+    RD[Destination register rd] --> R[Two-cycle destination delay]
+    V[Valid load] --> E[Two-cycle enable delay]
+    D --> DM[Write data multiplexer]
+    N[Normal ALU result] --> DM
+    R --> IM[Write index multiplexer]
+    RD --> IM
+    E --> DM
+    E --> IM
+    E --> OR[Combined write enable]
+    NW[Normal write enable] --> OR
+    DM --> RF[Register file]
+    IM --> RF
+    OR --> RF
+```
+
+This is an explanatory datapath, not a Makerchip-generated screenshot.
+
+### Expected timing waveform
+
+```mermaid
+sequenceDiagram
+    participant P as Instruction slot
+    participant M as Memory / delay
+    participant R as Register writeback
+    Note over P,R: Slot 1 - valid load
+    P->>M: Address 104, rd = 5
+    Note over P,R: Slot 2 - first invalid shadow
+    Note over P,R: Slot 3 - second invalid shadow
+    M->>R: Delayed data 42, rd = 5, enable = 1
+    Note over P,R: Slot 4 - valid normal operation
+    P->>R: Normal result 7, rd = 6
+```
+
+The following transaction-aligned timing table represents the expected waveform of the standalone demonstration. Values are illustrative, not measured.
+
+| Signal | Slot 0 | Slot 1 | Slot 2 | Slot 3 | Slot 4 | Slot 5 |
+|---|---:|---:|---:|---:|---:|---:|
+| valid | 1 | 1 | 0 | 0 | 1 | 1 |
+| valid_load | 0 | 1 | 0 | 0 | 0 | 0 |
+| load_wr_en | 0 | 0 | 0 | 1 | 0 | 0 |
+| normal_wr_en | 0 | 0 | 0 | 0 | 1 | 0 |
+| rf_wr_en | 0 | 0 | 0 | 1 | 1 | 0 |
+| rf_wr_index (when enabled) | — | — | — | 5 | 6 | — |
+| rf_wr_data (when enabled) | — | — | — | 42 | 7 | — |
+| x5 (updated value) | 0 | 0 | 0 | 42 | 42 | 42 |
+| x6 (updated value) | 0 | 0 | 0 | 0 | 7 | 7 |
+
+Slot 0 assumes reset has been released. Actual clock-edge presentation depends on the simulator's signal alignment.
+
 ## 6. Expected verification
 
 | Signal | Expected value |
