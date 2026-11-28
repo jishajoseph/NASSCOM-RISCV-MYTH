@@ -74,47 +74,54 @@ I will be updating this repository throughout the workshop with lecture notes, l
 
 ## Day 2 - Application Binary Interface and Basic Verification Flow
 
-No standalone lecture documents currently available.
+- [10 Introduction to ABI](day2/10_Introduction_to_ABI.md)
+- [11 Memory Allocation](day2/11_Memory_Allocation.md)
+- [12 Load Add Store Instructions](day2/12_Load_Add_Store_Instructions.md)
+- [13 Register ABI Names](day2/13_Register_ABI_Names.md)
+- [14 Assembly Algorithm](day2/14_Assembly_Algorithm.md)
+- [15 Assembly Function Call](day2/15_Assembly_Function_Call.md)
+- [16 C Assembly Simulation](day2/16_C_Assembly_Simulation.md)
+- [17 RISCV CPU Verification](day2/17_RISCV_CPU_Verification.md)
 
 ---
 
 ## Day 3 - Digital Logic with TL-Verilog and MakerChip
 
-- [10 Introduction](day3/10_Introduction.md)
-- [11 Logic Gates](day3/11_Logic_Gates.md)
-- [12 Multiplexer and MakerChip](day3/12_Multiplexer_and_MakerChip.md)
-- [13 Combinational Logic](day3/13_Combinational_Logic.md)
-- [14 Sequential Logic](day3/14_Sequential_Logic.md)
-- [15 Sequential Calculator](day3/15_Sequential_Calculator.md)
-- [16 Timing](day3/16_Timing.md)
-- [17 Pipelined Logic](day3/17_Pipelined_Logic.md)
-- [18 Total Distance](day3/18_Total_Distance.md)
-- [19 Calculator with Validity](day3/19_Calculator_with_Validity.md)
+- [18 Introduction](day3/18_Introduction.md)
+- [19 Logic Gates](day3/19_Logic_Gates.md)
+- [20 Multiplexer and MakerChip](day3/20_Multiplexer_and_MakerChip.md)
+- [21 Combinational Logic](day3/21_Combinational_Logic.md)
+- [22 Sequential Logic](day3/22_Sequential_Logic.md)
+- [23 Sequential Calculator](day3/23_Sequential_Calculator.md)
+- [24 Timing](day3/24_Timing.md)
+- [25 Pipelined Logic](day3/25_Pipelined_Logic.md)
+- [26 Total Distance](day3/26_Total_Distance.md)
+- [27 Calculator with Validity](day3/27_Calculator_with_Validity.md)
 
 ---
 
 ## Day 4 - Basic RISC-V CPU Microarchitecture
 
-- [20 Single Cycle RISCV CPU](day4/20_Single_Cycle_RISCV_CPU.md)
-- [21 Verilog Lab Part1](day4/21_Verilog_Lab_Part1.md)
-- [22 Verilog Lab Part2](day4/22_Verilog_Lab_Part2.md)
-- [23 Program Counter](day4/23_Program_Counter.md)
-- [24 Instruction Fetch](day4/24_Instruction_Fetch.md)
-- [25 Instruction Type Decode](day4/25_Instruction_Type_Decode.md)
-- [26 Immediate Decode](day4/26_Immediate_Decode.md)
-- [27 CPU Testbench](day4/27_CPU_Testbench.md)
+- [28 Single Cycle RISCV CPU](day4/28_Single_Cycle_RISCV_CPU.md)
+- [29 Verilog Lab Part1](day4/29_Verilog_Lab_Part1.md)
+- [30 Verilog Lab Part2](day4/30_Verilog_Lab_Part2.md)
+- [31 Program Counter](day4/31_Program_Counter.md)
+- [32 Instruction Fetch](day4/32_Instruction_Fetch.md)
+- [33 Instruction Type Decode](day4/33_Instruction_Type_Decode.md)
+- [34 Immediate Decode](day4/34_Immediate_Decode.md)
+- [35 CPU Testbench](day4/35_CPU_Testbench.md)
 
 ---
 
 ## Day 5 - Pipelined RISC-V CPU Microarchitecture
 
-- [28 Control and Data Hazards](day5/28_Control_and_Data_Hazards.md)
-- [29 Complete ALU](day5/29_Complete_ALU.md)
-- [30 Complete Decode and ALU](day5/30_Complete_Decode_and_ALU.md)
-- [31 Load Store Instructions](day5/31_Load_Store_Instructions.md)
-- [32 Load Data From Memory To Register File](day5/32_Load_Data_From_Memory_To_Register_File.md)
-- [33 Jump Control Logic](day5/33_Jump_Control_Logic.md)
-- [34 Workshop Wrap Up and Future Opportunities](day5/34_Workshop_Wrap_Up_and_Future_Opportunities.md)
+- [36 Control and Data Hazards](day5/36_Control_and_Data_Hazards.md)
+- [37 Complete ALU](day5/37_Complete_ALU.md)
+- [38 Complete Decode and ALU](day5/38_Complete_Decode_and_ALU.md)
+- [39 Load Store Instructions](day5/39_Load_Store_Instructions.md)
+- [40 Load Data From Memory To Register File](day5/40_Load_Data_From_Memory_To_Register_File.md)
+- [41 Jump Control Logic](day5/41_Jump_Control_Logic.md)
+- [42 Workshop Wrap Up and Future Opportunities](day5/42_Workshop_Wrap_Up_and_Future_Opportunities.md)
 
 ---
 
