@@ -85,21 +85,7 @@ The processor control logic is extended to support:
 
 ## 8. Makerchip Implementation
 
-### Stage 0 - Program Counter Redirection
 
-![Stage 0 Implementation](images/lec60/Stage0.png)
-
-### Stage 1 - Instruction Decoding
-
-![Stage 1 Instruction Decode](images/lec60/Stage1_pic1.png)
-
-### Stage 1 - Additional Control Logic
-
-![Stage 1 Control Logic](images/lec60/Stage1_pic2.png)
-
-### Stages 2 and 3 - Pipeline Control and Visualization
-
-![Stages 2 and 3](images/lec60/Stage2_3.png)
 
 ## 9. Scope of the Lab
 
