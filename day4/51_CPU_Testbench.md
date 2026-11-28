@@ -197,7 +197,7 @@ The processor was verified by executing the summation program. The self-checking
 | Destination Register | x10 |
 | Simulation Status | PASSED |
 
-![Successful Simulation](images/lec51/wavefom.png)
+![Successful Simulation](images/lec51/waveform.png)
 
 ### Implementation Limitations
 
