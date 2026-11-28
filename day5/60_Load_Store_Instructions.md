@@ -127,6 +127,19 @@ Expected transaction sequence: NOP at PC 0, LW at PC 4, invalid ADD at PC 8, inv
 
 **Verification status:** Makerchip compilation and simulation pending. This demonstration tests control flow only, not actual memory access or register writeback.
 
+### Companion decoder and ALU exercise
+
+The supplied companion notes are numbered 33 (Complete Decode and ALU). They describe a separate exercise; they are not evidence of successful execution in this repository.
+
+[Independent decoder and ALU exercise](60_Complete_Decode_and_ALU.md)
+
+### Source and screenshot checklist
+
+- [Load replay TL-Verilog source](../src/lec60_load_replay.tlv)
+- Capture the Makerchip waveform with stage-3 validity, shadow flags and PC.
+- Capture the generated datapath and simulation log.
+- Record the actual result before marking the lab as verified.
+
 ## 9. Scope of the Lab
 
 This lecture introduces the control mechanisms required to handle load instructions.
