@@ -50,7 +50,7 @@ Where:
 
 During cycle 3, three instructions are processed simultaneously in different stages.
 
-![Waterfall Pipeline](images/lec53/Waterfall%20Pipeline.png)
+![Waterfall Pipeline](images/lec53/Waterfall%20Pipeline%20Timing%20Diagram.png)
 
 ## 4. Performance Improvement
 
@@ -98,8 +98,7 @@ In a pipelined processor, the next sequential instruction may already have been 
 
 This creates a possibility of executing instructions from an incorrect path.
 
-![Control Flow Hazard](images/lec53/Control%20Flow%20Hazard.png)
-
+![Control Flow Hazard](images/lec53/CPU%20Pipeline%20Control%20Hazards%20Explained.png)
 Possible solutions include:
 
 - Pipeline stalling
@@ -136,7 +135,7 @@ Incorrect comparison using the old value:
     9 < 10 = True
 
 Reading the old register value can therefore result in an incorrect branch decision.
-![Read After Write Hazard](images/lec53/Read%20After%20Write%20Hazard.png)
+![Read After Write Hazard](images/lec53/Read%20After%20Write%20Pipeline%20Hazard.png)
 
 ## 8. Hazard Resolution Techniques
 
