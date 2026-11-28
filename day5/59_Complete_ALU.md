@@ -96,7 +96,7 @@ The result is 1 when the comparison condition is true and 0 otherwise.
 
 The decoded instruction determines which arithmetic, logical, shift or comparison result is selected for register writeback.
 
-![Complete ALU TLV Implementation](images/lec59/ALU.png)
+
 
 ## 10. Expected Verification Results
 
