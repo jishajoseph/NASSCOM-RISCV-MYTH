@@ -15,7 +15,7 @@ The clock period is limited by the longest combinational path.
 
 Pipelining divides the datapath into smaller stages separated by pipeline registers. This reduces the combinational delay per stage and potentially increases the operating clock frequency.
 
-![CPU Pipeline Architecture](images/CPU_Pipeline_Architecture.png)
+![CPU Pipeline Architecture](CPU_Pipeline_Architecture.png)
 
 ## 2. Motivation for Pipelining
 
