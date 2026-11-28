@@ -49,15 +49,9 @@ The lab was run in Makerchip. The supplied datapath screenshot shows the CPU sco
 
 The supplied waveform shows the load in slot 1, invalid shadow slots 2 and 3, delayed writeback to x5 in slot 3, and normal writeback to x6 in slot 4.
 
-Screenshot files awaiting upload to this repository:
+![Actual Makerchip datapath](images/lec61/datapath2.png)
 
-- `images/lec61/Load_Writeback_Datapath.png`
-- `images/lec61/Load_Writeback_Waveform.png`
-
-<!-- Enable these image links once the PNG files are uploaded:
-![Actual Makerchip datapath](images/lec61/Load_Writeback_Datapath.png)
-![Actual Makerchip waveform](images/lec61/Load_Writeback_Waveform.png)
--->
+![Actual Makerchip waveform](images/lec61/waveform2.png)
 
 ## 6. Waveform verification
 
@@ -72,7 +66,7 @@ Screenshot files awaiting upload to this repository:
 
 The supplied Makerchip waveform confirms address 104, returned data 42, delayed destination x5, x5 = 42, x6 = 7, and no collision or recorded error in the displayed interval. The final simulation PASS log has not been supplied.
 
-The datapath and waveform have been captured; the PNG files still need to be uploaded to the repository. Save the simulation log separately.
+The actual datapath and waveform screenshots are included above. The final simulation log remains pending.
 
 ## 7. Scope and limitations
 
