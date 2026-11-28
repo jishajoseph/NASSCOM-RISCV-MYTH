@@ -177,13 +177,13 @@ The complete RISC-V processor implementation used in the Makerchip editor is giv
 
 ### Makerchip Editor Implementation
 
-The complete processor was implemented using TL-Verilog in the Makerchip IDE.
 
-![Complete TL-Verilog Implementation](images/lec51/CPU_Testbench_Implementation.png)
+
+
 
 ### Generated CPU Datapath
 
-![CPU Datapath](images/lec51/CPU_Testbench_Datapath.png)
+![CPU Datapath](images/lec51/datapath.png)
 
 ### Functional Verification
 
@@ -197,7 +197,7 @@ The processor was verified by executing the summation program. The self-checking
 | Destination Register | x10 |
 | Simulation Status | PASSED |
 
-![Successful Simulation](images/lec51/Simulation_Passed_Log.png)
+![Successful Simulation](images/lec51/wavefom.png)
 
 ### Implementation Limitations
 
