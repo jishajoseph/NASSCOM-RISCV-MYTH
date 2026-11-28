@@ -21,27 +21,11 @@ JAL uses opcode 0x6F. JALR uses opcode 0x67 and funct3 = 0. Both are uncondition
 
 The workshop uses two invalid younger instruction slots following a redirect. Validity must gate the redirect itself and architectural writes. A full CPU must arbitrate branch, load replay and jump redirection together; this exercise isolates jumps.
 
-## 4. Conceptual datapath
+## 4. Actual Makerchip datapath and waveform
 
-```mermaid
-flowchart TD
-    PC[Current PC] --> A[PC plus immediate]
-    IMM[Decoded immediate] --> A
-    IMM --> B[Register plus immediate]
-    RS[Forwarded rs1] --> B
-    B --> C[Clear bit zero]
-    A --> M[Jump target mux]
-    C --> M
-    V[Valid jump decode] --> M
-    M --> N[Next PC selection]
-    V --> S[Invalidate two younger slots]
-    PC --> L[PC plus 4]
-    L --> RF[Link register writeback]
-    V --> RF
-    RD[Destination index] --> RF
-```
+![Makerchip datapath](images/lec64/datapath3.png)
 
-This is a conceptual diagram, not a captured Makerchip datapath.
+![Makerchip waveform](images/lec64/waveform3.png)
 
 ## 5. Makerchip implementation
 
@@ -66,7 +50,7 @@ Expected final values: x5 = 8, x6 = 24, jump count = 2, shadow count = 4. The te
 
 ## 7. Verification and scope
 
-Makerchip generated the supplied waveform and datapath successfully. The waveform shows JAL target 0x14, JALR sum 0x21, aligned JALR target 0x20, two valid jumps, shadow signals and link write enables. The final PASS log and final register values are not visible in the supplied screenshots. The timing table remains an expected sequence. This standalone test uses a small instruction ROM, a constant source operand and two modeled destination registers. It does not integrate the complete CPU, branch/load arbitration, forwarding or exception handling. Actual screenshots have been captured; repository image upload is pending.
+Makerchip generated the supplied waveform and datapath successfully. The waveform shows JAL target 0x14, JALR sum 0x21, aligned JALR target 0x20, two valid jumps, shadow signals and link write enables. The final PASS log and final register values are not visible in the supplied screenshots. The timing table remains an expected sequence. This standalone test uses a small instruction ROM, a constant source operand and two modeled destination registers. It does not integrate the complete CPU, branch/load arbitration, forwarding or exception handling. Actual Makerchip screenshots are included in Section 4.
 
 ## Learning outcomes
 
