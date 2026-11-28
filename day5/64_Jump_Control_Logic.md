@@ -66,7 +66,7 @@ Expected final values: x5 = 8, x6 = 24, jump count = 2, shadow count = 4. The te
 
 ## 7. Verification and scope
 
-Makerchip compilation and simulation are pending. The timing table is predicted behavior, not measured evidence. This standalone test uses a small instruction ROM, a constant source operand and two modeled destination registers. It does not integrate the complete CPU, branch/load arbitration, forwarding or exception handling. Actual screenshots will be added after simulation.
+Makerchip generated the supplied waveform and datapath successfully. The waveform shows JAL target 0x14, JALR sum 0x21, aligned JALR target 0x20, two valid jumps, shadow signals and link write enables. The final PASS log and final register values are not visible in the supplied screenshots. The timing table remains an expected sequence. This standalone test uses a small instruction ROM, a constant source operand and two modeled destination registers. It does not integrate the complete CPU, branch/load arbitration, forwarding or exception handling. Actual screenshots have been captured; repository image upload is pending.
 
 ## Learning outcomes
 
