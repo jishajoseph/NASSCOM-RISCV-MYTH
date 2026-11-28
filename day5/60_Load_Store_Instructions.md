@@ -1,4 +1,4 @@
-
+![Load Instruction Decode](images/lec60/LoadInstructionDecode.png)
 # 60 - RV_D5SK3_L1 - Introduction to Load/Store Instructions and Lab to Redirect Loads
 
 ## Objective
